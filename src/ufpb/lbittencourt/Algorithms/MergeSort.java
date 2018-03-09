@@ -26,8 +26,7 @@ public class MergeSort implements Sort {
         int listaDireita[] = new int[n2];
 
         System.arraycopy(vetor, inicio, listaEsquerda, 0, n1);
-        for (int j = 0; j < n2; ++j)
-            listaDireita[j] = vetor[meio + 1 + j];
+        System.arraycopy(vetor, meio + 1, listaDireita, 0, n2);
 
         int i = 0;
         int j = 0;
