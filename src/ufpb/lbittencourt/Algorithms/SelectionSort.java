@@ -1,6 +1,6 @@
 package ufpb.lbittencourt.Algorithms;
 
-public class SelectionSort {
+public class SelectionSort implements Sort {
     /***
      * Esse algoritmo de Selection Sort pode ser encontrado no link:
      * https://pt.wikipedia.org/wiki/Selection_sort

@@ -1,6 +1,6 @@
 package ufpb.lbittencourt.Algorithms;
 
-public class InsertionSort {
+public class InsertionSort implements Sort {
     /***
      * Esse algoritmo de Insertion Sort pode ser encontrado no livro
      * Algoritmos: Teoria e Prática, 3 ed., pg. 18, CORMEN et al.
