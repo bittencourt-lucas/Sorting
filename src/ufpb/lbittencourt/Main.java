@@ -33,6 +33,7 @@ public class Main {
         System.out.println("2 - SELECTION SORT");
         System.out.println("3 - MERGE SORT");
         System.out.println("4 - QUICKSORT");
+        System.out.println("5 - HEAP SORT (MAX HEAP)");
         Scanner reader = new Scanner(System.in);
         System.out.print("ESCOLHA: ");
         int escolha = reader.nextInt();
@@ -63,6 +64,12 @@ public class Main {
                 break;
             case 4:
                 sorter = new QuickSort();
+                startTime = System.nanoTime();
+                sorter.sort(array);
+                endTime = System.nanoTime();
+                break;
+            case 5:
+                sorter = new HeapSort();
                 startTime = System.nanoTime();
                 sorter.sort(array);
                 endTime = System.nanoTime();
