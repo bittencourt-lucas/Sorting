@@ -34,6 +34,8 @@ public class Main {
         System.out.println("3 - MERGE SORT");
         System.out.println("4 - QUICKSORT");
         System.out.println("5 - HEAP SORT (MAX HEAP)");
+        System.out.println("6 - COUNTING SORT");
+        System.out.println("7 - RADIX SORT");
         Scanner reader = new Scanner(System.in);
         System.out.print("ESCOLHA: ");
         int escolha = reader.nextInt();
@@ -70,6 +72,18 @@ public class Main {
                 break;
             case 5:
                 sorter = new HeapSort();
+                startTime = System.nanoTime();
+                sorter.sort(array);
+                endTime = System.nanoTime();
+                break;
+            case 6:
+                sorter = new CountingSort();
+                startTime = System.nanoTime();
+                sorter.sort(array);
+                endTime = System.nanoTime();
+                break;
+            case 7:
+                sorter = new RadixSort();
                 startTime = System.nanoTime();
                 sorter.sort(array);
                 endTime = System.nanoTime();
