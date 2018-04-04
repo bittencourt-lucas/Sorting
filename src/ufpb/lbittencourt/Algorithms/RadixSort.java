@@ -12,16 +12,14 @@ public class RadixSort implements Sort {
         for (int i = 1; i < vetor.length; i++)
             if (vetor[i] > k)
                 k = vetor[i];
-        // O Counting Sort irá ocorrer para cada dígito do número
-        // Ao invés de passar o dígito, é passada a variável exp
-        // exp é 10^i, onde i é o dígito atual
+        k++;
+
         for (int exp = 1; k / exp > 0; exp *= 10)
             countingSort(vetor, exp);
     }
 
-    // Implementando o Counting Sort para realizar o Radix Sort
+    // Implementando o Counting Sort para realizar o Radix Sort.
     private void countingSort(int[] vetor, int exp) {
-        // Descobre, linearmente, qual é o valor de K
         int[] aux = new int[10];
 
         Arrays.fill(aux, 0);
